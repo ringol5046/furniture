@@ -1,0 +1,32 @@
+<% include ../partials/header %>
+
+  <header class="jumbotron">
+    <div class="container">
+      <h1>Welcome to XXXX</h1>
+      <p>View our hand-picked furnitures Collection</p>
+      <p>
+        <a class="btn btn-primary btn-lg" href="/furnitures/new">Add New Furniture</a>
+      </p>
+    </div>
+  </header>
+
+  <div class="row text-center">
+    <% furnitures.forEach(function(furniture){ %>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+        <div class="thumbnail">
+          <img src="<%= furniture.image %>" height="220">
+          <div class="caption">
+            <h4>
+              <%=furniture.name %>
+            </h4>
+          </div>
+          <p>
+            <a href="/furnitures/<%= furniture._id %>" class="btn btn-primary">More Info</a>
+          </p>
+        </div>
+      </div>
+      <% }); %>
+  </div>
+
+
+  <% include ../partials/footer %>

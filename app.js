@@ -18,10 +18,9 @@ var seedDB = require("./seeds");
 
 var app = express();
 
-const port = process.env.PORT;
-
 //seedDB();
-mongoose.connect("mongodb://localhost/yelp_camp_v11");
+// mongoose.connect("mongodb://localhost/furniture");
+mongoose.connect("mongodb://xzl5046:xzl5046@ds117336.mlab.com:17336/furniture");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"))
@@ -58,6 +57,6 @@ app.use(authRoutes);
 app.use('/furnitures/:id/comments', commentRoutes);
 app.use('/furnitures', furnitureRoutes);
 
-app.listen(3000, () => {
-  console.log(`Server start on ${port}`);
+app.listen(process.env.PORT, process.env.IP, () => {
+  console.log(`Server start on ${process.env.PORT}`);
 });

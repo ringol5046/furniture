@@ -40,22 +40,22 @@ body {
 }
 
 .slideshow li:nth-child(1) { 
-background-image: url(http://i.imgur.com/K3mPv14.jpg) 
+background-image: url(https://www.grandhotelriva.it/typo3temp/_processed_/csm_camere-suite-hotel-garda03_a2a57e7456.jpg) 
 }
 .slideshow li:nth-child(2) { 
-background-image: url(http://i.imgur.com/SBEmFpv.jpg);
+background-image: url(http://www.hoteltremplin.com/website/var/tmp/thumb_1728__1520x900.jpeg);
 animation-delay: 10s; 
 }
 .slideshow li:nth-child(3) { 
-background-image: url(http://i.imgur.com/emvhOnb.jpg);
+background-image: url(https://cdn.tollbrothers.com/communities/12553/images/1-Boulders-Family-Room-with-View-High-Res_1920.jpg);
 animation-delay: 20s; 
 }
 .slideshow li:nth-child(4) { 
-background-image: url(http://i.imgur.com/2LSMCmJ.jpg);
+background-image: url(https://www.viscato.com/wp-content/uploads/2016/02/Familienhaus_Viscato_01_0022.jpg);
 animation-delay: 30s; 
 }
 .slideshow li:nth-child(5) { 
-background-image: url(http://i.imgur.com/TVGe0Ef.jpg);
+background-image: url(http://homesfeed.com/wp-content/uploads/2015/09/bed-pillows-sofa-balcony-lamp-curtains.jpg);
 animation-delay: 40s; 
 }
 
